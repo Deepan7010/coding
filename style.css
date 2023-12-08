@@ -1,132 +1,284 @@
-*{
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 body {
-    width:100%;
-    height:100vh;
-    background: url(img/home.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Poppins", sans-serif;
 }
 nav {
-    display:flex;
-    justify-content:space-between;
-    width: 100%;
-    height:50px;
-    background-color:#0000009d;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 50px;
+  background-color: #000000b3;
+  align-items: center;
+  position: fixed;
+  inset: 0;
 }
 nav ul {
-    width: 600px;
-    height: 40px;
-    margin:4px 20px;
-     display: flex;
-    justify-content: space-evenly;
-    align-content:center;
-    align-items: center;
+  width: 600px;
+  height: 40px;
+  margin: 4px 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
 
-    color: aliceblue;
-    
+  color: aliceblue;
 }
 nav ul li {
-    display: flex; 
-     align-items: center;
-     padding: 5px;
-    margin: 2px;
-    list-style: none;
-    
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  margin: 2px;
+  list-style: none;
 }
 nav ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
 }
 nav ul li a:hover {
-    color:cornflowerblue;
-     padding-bottom: 5px; 
-    border-bottom:4px solid chartreuse ;
-    transition: .2s;
+  color: cornflowerblue;
+  padding-bottom: 5px;
+  border-bottom: 4px solid chartreuse;
+  transition: 0.2s;
 }
 .logo img {
-  margin-left:15px;
+  margin-left: 15px;
   margin-right: 7px;
-    text-align: center;
-    width: 40px;
-    height:40px;
-} 
+  text-align: center;
+  width: 40px;
+  height: 40px;
+}
 .logo {
-    margin: 0 10px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: rgb(255, 255, 255);
-    font-size: 20px;
-    font-weight: 1000;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 10px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 1000;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.contain {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      40deg,
+      rgba(0, 0, 0, 0.365),
+      rgba(0, 0, 0, 0.347)
+    ),
+    url(img/home.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .name {
-    width: 60vw;
-    height:200px;
-    margin: 250px 0; 
- margin-left: 290px;
-    font-size:2rem;
-    font-weight: bold;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color:black;
-    box-shadow: 0px -10px 80px rgb(253, 253, 253) inset;
-
+  width: 50vw;
+  border-radius: 5px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: black;
 }
 .learn {
-    height: 30px;
-    width:10%;
-    display: inline;
-    margin:30px 0px;
-    border-radius: 5px;
-    font-weight:600;
-    background-color:darkblue;
-    margin-left:-200px;
-    color: white;
+  display: inline;
+  margin: 30px 0px;
+  border-radius: 7px;
+  font-weight: 600;
+  background-color: darkgreen;
+  padding: 0.5em 1em;
+  color: white;
+  font-size: clamp(1rem, 3vw, 1.5rem);
 }
-.learn:hover{
-    background-color:darkgreen;
-}
- .login {
-    height: 30px;
-    width:10%;
-    display: inline;
-    margin-top: -60px;
-    border-radius: 5px;
-    font-weight:600;
-    background-color: darkblue;
-    color: white;
-    margin-left:150px;
-    margin-bottom: auto;
-    transition: .2s;
-} 
-
-.login:hover{
-    background-color: darkgreen;
+.learn:hover {
+  background-color: darkblue;
 }
 
-h1 {
-    margin-top: 30px;
-    text-shadow: 2px 2px 5px red;
-    box-shadow: 0px 10px 50px 15px rgb(244, 6, 6);
-    transition: .2s;
-    border-radius: 5px;
-    padding:2px 12px;
-
+.name h1 {
+  text-align: center;
+  margin-top: 30px;
+  text-shadow: 2px 2px 5px black;
+  color: white;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: bold;
+  transition: 0.2s;
+  border-radius: 5px;
+  padding: 2px 12px;
 }
-h1:hover {
-    text-shadow: 2px 2px 5px rgb(124, 10, 239);
-    box-shadow: 0px 10px 50px 15px rgb(124, 10, 239);
+#toggle {
+  display: none;
+}
+.btn-toggle::before {
+  content: "\f0c9";
+  font-family: FontAwesome;
+  color: white;
+  font-size: 30px;
+  margin-right: 20px;
+  display: none;
+}
+
+/* course  */
+.card {
+  width: 100vw;
+  max-height: max-content;
+}
+.card h1 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+}
+.card-header {
+  margin: 3% 1%;
+  width: 18rem;
+  border: 1px solid rgba(128, 128, 128, 0.58);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 5px;
+}
+.card-header .img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px 5px 0 0;
+}
+.card-header .card-body {
+  padding: 10px 20px;
+}
+.card-body h2 {
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+.card-body p {
+  margin-bottom: 8px;
+}
+.card-body button {
+  padding: 6px;
+  margin-bottom: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: deepskyblue;
+  color: white;
+}
+.flex {
+  display: flex;
+  margin: 0 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-text {
+  color: rgba(0, 0, 0, 0.694);
+  font-weight: 100;
+}
+.service {
+  width: 100vw;
+  max-height: max-content;
+}
+.service .head {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+}
+.service h1 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  width: 100%;
+}
+.service .image {
+  width: 500px;
+  height: 500px;
+}
+.contact {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact .image {
+  width: 500px;
+  height: 500px;
+}
+.contact h1 {
+  text-align: center;
+  background-color: blue;
+  color: white;
+  width: 100%;
+}
+.contact p {
+  margin-top: 10px;
+  margin-bottom:15px;
+}
+
+@media (width<700px) {
+  #toggle:checked ~ ul {
+    transform: translateX(0%);
+  }
+  #toggle:checked ~ .btn-toggle {
+    z-index: 11;
+  }
+  #toggle:checked ~ .btn-toggle::before {
+    content: "\f00d";
+    color: black;
+  }
+  nav ul label {
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  #toggle:checked ~ ul label {
+    background-color: rgba(0, 0, 0, 0.505);
+    pointer-events: all;
+  }
+  nav ul {
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    background-color: white;
+    z-index: 10;
+    margin: 0;
+    transform: translateX(100%);
+    transition: 0.5s;
+  }
+
+  nav ul li a {
+    color: black;
+  }
+  [for="toggle"]::before {
+    display: block;
+  }
+  .service .image {
+    width: 300px;
+    height: 300px;
+  }
+  .contact .image {
+    width: 300px;
+    height: 300px;
+  }
 }

@@ -1,28 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>1%Coding</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/WhatsApp Image 2023-09-28 at 11.01.28.jpg" type="image/x-icon">
-</head>
-<body>
-<nav>
-    <div class="logo"><img src="img/WhatsApp Image 2023-09-28 at 11.01.28.jpg" alt="Logo" width="20px" height="20px">Coding</div>
-    <ul>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="img/WhatsApp Image 2023-09-28 at 11.01.28.jpg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="img/WhatsApp Image 2023-09-28 at 11.01.28.jpg"
+          alt="Logo"
+          width="20px"
+          height="20px"
+        />Coding
+      </div>
+      <input type="checkbox" id="toggle" />
+      <label for="toggle" class="btn-toggle"></label>
+      <ul>
+        <label for="toggle"></label>
         <li><a href="#">Home</a></li>
-        <li><a href="#">Course</a></li>
-        <li><a href="#">Service</a></li>
-        <li><a href="#">Abouts</a></li>
-        <li><a href="#">contacts</a></li>
-    </ul>
-</nav>
-<div class="name">
-    <h1 >Training and placement</h1>
-    <button class="learn">Learn now</button>
-    <button class="login">Login</button>
-</div>
-    
-</body>
+        <li><a href="#course">Course</a></li>
+        <li><a href="#service">Service</a></li>
+        <li><a href="#contact">contacts</a></li>
+      </ul>
+    </nav>
+    <div class="contain">
+      <div class="name">
+        <h1>Training and placement</h1>
+        <button class="learn">Learn now</button>
+      </div>
+    </div>
+    <div class="card" id="course">
+      <h1>Course</h1>
+      <div class="flex">
+        <!-- card 1 -->
+        <div class="card-header">
+          <div>
+            <img
+              src="https://www.devopsschool.com/blog/wp-content/uploads/2022/03/html.jpg"
+              alt="html"
+              class="img"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Learn HTML-5</h2>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button>Learn Now</button>
+          </div>
+        </div>
+        <!-- card 2 -->
+        <div class="card-header">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvxPW995UB1hSxk2Am-wv47AEjREyWLaeC0A&usqp=CAU"
+              alt="html"
+              class="img"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Learn css</h2>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button>Learn Now</button>
+          </div>
+        </div>
+        <!-- card 3 -->
+        <div class="card-header">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5C_-qT_x0hZ-bo-1Nv2kQFjVfmcduqL5rcQ&usqp=CAU"
+              alt="html"
+              class="img"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Learn Bootstrap</h2>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button>Learn Now</button>
+          </div>
+        </div>
+        <!-- card -4  -->
+        <div class="card-header">
+          <div>
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTcIcchlrxO3kf11OR-TzIMdfMmGDe26a30A&usqp=CAU"
+              alt="html"
+              class="img"
+            />
+          </div>
+          <div class="card-body">
+            <h2>Learn Javascript</h2>
+            <p class="card-text">
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </p>
+            <button>Learn Now</button>
+          </div>
+        </div>
+        <!-- card -4 end  -->
+      </div>
+    </div>
+    <!-- card End -->
+    <div class="service" id="service">
+      <h1>Training and Placement</h1>
+      <div class="head">
+        <img src="/work.svg" alt="Training" class="image" />
+        <p style="margin-bottom: 10px">
+          The freshers are most welcome to our placement training center to get
+          an immense placement opportunity and we are taking more effort
+          exclusively as much as possible. The enthusiastic and skillful group
+          of Besant Technologies placement cell is recognized for their
+          interview scheduling with the topmost IT companies. We have tie-ups
+          with responsible countrywide and universal clients to provide 100%
+          placement assistance for freshers.
+        </p>
+      </div>
+    </div>
+    <!-- service end  -->
+    <!-- contact start  -->
+    <div>
+      <div class="contact" id="contact">
+        <h1>Contact us</h1>
+        <img src="/Contact us-amico.svg" alt="contact" class="image" />
+        <address>
+          <p>
+            <i class="fa-solid fa-location-dot"></i>
+            No.44 1st Floor,<br />
+            Mahalakshmi Nagar,<br />
+            OMR Sholingnallur,<br />
+            TamilNadu-600001. <br />
+          </p>
+          <p><i class="fa-solid fa-mobile"></i> +91 987654321</p>
+          <p style="margin-bottom: 1rem">
+            <i class="fa-solid fa-envelope"></i> hr@onepercentagecoding
+          </p>
+        </address>
+      </div>
+    </div>
+  </body>
 </html>
